@@ -1,7 +1,9 @@
 package com.termtune.player.ui
 
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -63,9 +65,14 @@ fun TermTuneRoot(
                 }
             },
         ) {
+            // The NavHost, not the individual screens, is the Column's
+            // child, so the weight has to live here. Screens then fill it.
             NavHost(
                 navController = navController,
                 startDestination = TermTuneDestination.TERMINAL.route,
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
             ) {
                 composable(TermTuneDestination.TERMINAL.route) {
                     TerminalScreen(

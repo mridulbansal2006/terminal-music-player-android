@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
@@ -40,7 +41,7 @@ import com.termtune.player.ui.theme.LocalTerminalPalette
 
 /** Local Music Library: searchable, scrollable, tap to play. */
 @Composable
-fun ColumnScope.LibraryScreen(
+fun LibraryScreen(
     state: TerminalUiState,
     onSongSelected: (Int) -> Unit,
     onRescan: () -> Unit,
@@ -57,7 +58,7 @@ fun ColumnScope.LibraryScreen(
 
     Column(
         modifier = Modifier
-            .weight(1f)
+            .fillMaxSize()
             .imePadding(),
     ) {
         Row(

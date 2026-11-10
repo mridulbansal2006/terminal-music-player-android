@@ -6,8 +6,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
@@ -43,7 +43,7 @@ import com.termtune.player.ui.theme.LocalTerminalPalette
  * usability trap in a mobile terminal UI.
  */
 @Composable
-fun ColumnScope.TerminalScreen(
+fun TerminalScreen(
     state: TerminalUiState,
     playerActions: PlayerActions,
     onSubmitCommand: (String) -> Unit,
@@ -55,7 +55,7 @@ fun ColumnScope.TerminalScreen(
 
     Column(
         modifier = Modifier
-            .weight(1f)
+            .fillMaxSize()
             .imePadding(),
     ) {
         TerminalOutput(

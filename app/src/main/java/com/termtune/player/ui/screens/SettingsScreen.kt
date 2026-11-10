@@ -6,8 +6,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -29,7 +29,7 @@ import com.termtune.player.ui.theme.palette
 
 /** Settings Screen: theme, playback modes, library and permission status. */
 @Composable
-fun ColumnScope.SettingsScreen(
+fun SettingsScreen(
     state: TerminalUiState,
     onThemeSelected: (TerminalTheme) -> Unit,
     onShuffleToggled: () -> Unit,
@@ -43,7 +43,7 @@ fun ColumnScope.SettingsScreen(
 
     Column(
         modifier = Modifier
-            .weight(1f)
+            .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(16.dp),
     ) {

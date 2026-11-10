@@ -1,8 +1,7 @@
 package com.termtune.player.ui.screens
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -17,13 +16,12 @@ import com.termtune.player.ui.theme.LocalTerminalPalette
 
 /** Help / Commands Screen: the same reference the `help` command prints. */
 @Composable
-fun ColumnScope.HelpScreen() {
+fun HelpScreen() {
     val palette = LocalTerminalPalette.current
 
     LazyColumn(
         modifier = Modifier
-            .weight(1f)
-            .fillMaxWidth()
+            .fillMaxSize()
             .padding(horizontal = 14.dp),
     ) {
         item {

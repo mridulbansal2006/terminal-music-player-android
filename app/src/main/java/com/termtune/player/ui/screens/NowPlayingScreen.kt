@@ -5,8 +5,8 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -31,7 +31,7 @@ import com.termtune.player.ui.theme.LocalTerminalPalette
 
 /** Now Playing Interface: full track detail, ASCII meter and volume control. */
 @Composable
-fun ColumnScope.NowPlayingScreen(
+fun NowPlayingScreen(
     state: TerminalUiState,
     playerActions: PlayerActions,
     onVolumeChanged: (Int) -> Unit,
@@ -42,7 +42,7 @@ fun ColumnScope.NowPlayingScreen(
 
     Column(
         modifier = Modifier
-            .weight(1f)
+            .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(16.dp),
     ) {
