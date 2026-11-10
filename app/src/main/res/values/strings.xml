@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TermTune</string>
+    <string name="notification_channel_name">TermTune playback</string>
+
+    <!-- Accessibility labels for the compact player controls. -->
+    <string name="cd_play">Play</string>
+    <string name="cd_pause">Pause</string>
+    <string name="cd_next">Next track</string>
+    <string name="cd_previous">Previous track</string>
+    <string name="cd_stop">Stop playback</string>
+    <string name="cd_shuffle">Toggle shuffle</string>
+    <string name="cd_repeat">Toggle repeat</string>
+    <string name="cd_seek_bar">Playback position</string>
+    <string name="cd_command_input">Terminal command input</string>
+    <string name="cd_run_command">Run command</string>
+    <string name="cd_history">Command history</string>
+</resources>

@@ -1,0 +1,35 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Local SDK location and other machine-specific config
+local.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.cxx/
+captures/
+
+# Signing material and secrets - never commit these
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.p12
+google-services.json
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+output.json
+
+# Generated test audio
+build/test-audio/
+
+# macOS
+.DS_Store
