@@ -125,6 +125,20 @@ app's own UI via `uiautomator dump`, from `dumpsys media_session`, and from
 | Blinking cursor | Present at the prompt and at the end of terminal output | **Pass** |
 | Accessibility labels | `uiautomator dump` shows `content-desc` on transport buttons, sliders, tabs and the command field | **Pass** |
 
+### 3.9 Released artifact
+
+Verified against the published GitHub Release, not just the local build.
+
+| Case | Observed | Result |
+| --- | --- | --- |
+| Public download URL | `curl -sIL` without credentials returned HTTP 200 | **Pass** |
+| Download integrity | SHA-256 of the downloaded file matched the local APK exactly (`e239de27…`) | **Pass** |
+| Downloaded file is a valid APK | `aapt2 dump badging` reported `com.termtune.player`, versionCode 1, minSdk 24, targetSdk 35 | **Pass** |
+| Installs from the download | `adb install` of the downloaded file → `Success` | **Pass** |
+| Runs from the download | `list` printed 4 tracks; `play 1` started *Fork Bomb Anthem*; media session reported playing | **Pass** |
+| Keyboard Send action | Pressing the IME send key submits the command, same as `[run]` | **Pass** |
+| Crashes | `logcat` reported 0 FATAL exceptions | **Pass** |
+
 ## 4. Not verified
 
 These are stated plainly rather than assumed to work.
