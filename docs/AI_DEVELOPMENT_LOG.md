@@ -7,13 +7,19 @@ that went wrong.
 
 ## Conversation link
 
-> **Paste the shareable Claude conversation link here before submitting:**
->
-> `<REPLACE WITH YOUR CLAUDE CONVERSATION SHARE LINK>`
+**Full transcript:** [docs/AI_CHAT_TRANSCRIPT.md](AI_CHAT_TRANSCRIPT.md)
 
-To generate it: open the conversation in Claude, use **Share**, and copy the
-public link. The link is intentionally left as a placeholder — it has not been
-invented or guessed.
+https://github.com/mridulbansal2006/terminal-music-player-android/blob/main/docs/AI_CHAT_TRANSCRIPT.md
+
+The work was done in a **Claude Code desktop session**, not a claude.ai chat.
+Claude Code sessions have an **Export** function that writes a local archive;
+they do not produce a public `claude.ai/share/...` URL. The transcript above is
+that export, converted to readable Markdown and committed here so the chat
+history has a stable public link.
+
+It contains every human prompt and every Claude reply. Internal reasoning blocks
+and verbose tool output are omitted for readability, tool calls are summarised,
+and email addresses are redacted. Nothing was added or rewritten after the fact.
 
 ## How the work was structured
 

@@ -257,3 +257,4 @@ Back in the app, run `list`.
 - [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md) — five-minute demo script and viva questions
 - [docs/TEST_REPORT.md](docs/TEST_REPORT.md) — what was verified, and how
 - [docs/AI_DEVELOPMENT_LOG.md](docs/AI_DEVELOPMENT_LOG.md) — AI-assisted development record
+- [docs/AI_CHAT_TRANSCRIPT.md](docs/AI_CHAT_TRANSCRIPT.md) — the full development conversation
